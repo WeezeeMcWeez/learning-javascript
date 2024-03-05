@@ -3,6 +3,14 @@ class Cat {
         this.name = name
         this.age = age
     }
+    meow() {
+        console.log('Meow!')
+    }
+    scratch(numberOfTimes) {
+        for(let x = 1; x <= numberOfTimes; x++) {
+            console.log('Scratch')
+        }
+    }
 }
 
 const myFirstCat = new Cat('Nippers', 11)
@@ -13,4 +21,8 @@ console.log(myFirstCat.name)
 const mySecondCat = new Cat ('Little Debbie', 'deceased')
 
 console.log(mySecondCat.age)
-console.log(mySecondCat)
+
+myFirstCat.meow()
+mySecondCat.meow()
+
+myFirstCat.scratch(4) 
